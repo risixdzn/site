@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Ricardo Amorim</title>
+    <link rel="shortcut icon" type="image/png" href="Imgs-portfolio/favicon.png">
+    <link rel="stylesheet" href="css/portfoliostyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://kit.fontawesome.com/53a67ba7bc.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <meta property='og:title' content='Portfolio - Ricardo Amorim' />
+    <meta property='og:image' content="https://i.ibb.co/ZWhn6yY/og-image-PORTFOLIO.png" />
+    <meta property='og:description' content='Editor de Vídeos. Experiente em Premiere, After Effects e Photoshop.' />
+    <meta property='og:url' content='https://risixdzn.github.io/portfolio/' />
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta content="#8a2be2" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+  <body class="non-event">
+    <!--transition page-->
+    <link rel="stylesheet" href="css/transition.css">
+    <script src="js/animations.js"></script>
+
+    <!--nav-->
+    <header>
+      <nav>
+        <div class="container">
+          <img class="headerimg" src="Imgs-portfolio/Logo.svg">
+          <div class="menu">
+            <a href="https://risixdzn.github.io/home">Home</a>
+            <a href="https://risixdzn.github.io/portfolio.html" class="is-active">Portfólio</a>
+            <a href="#">Preços</a>
+            <a href="https://twitter.com/risixdzn" target="_blank">Contato</a>
+          </div>
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <nav class="mobile-nav">
+      <a id="_home" onclick="home()">Home</a>
+      <a id="_portfolio" onclick="portfolio()">Portfólio</a>
+      <a id="_precos" onclick="precos()">Preços</a>
+      <a id="_contato" onclick="contato()">Contato</a>
+    </nav>
+    <script src="js/portfolio.js"></script>
+    
+    <!--progressbar-->
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <script type="text/javascript">
+      var percent = document.getElementById("progressbar");
+      var percent = document.getElementById("percent");
+      window.onscroll = function() {
+        var totalHeight = document.body.scrollHeight - window.innerHeight;
+        var progress = (window.pageYOffset / totalHeight) * 100;
+        progressbar.style.height = progress + "%";
+      }
+    </script>
+
+    <!--progressbarend-->
+
+    <!--backtop-->
+    <a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!--backtopend-->
+
+    <!--preloader-->
+    <div class="preloader">
+      <div class="loadbox">
+        <div class="card">
+          <div class="spinner"></div>
+          <h3 class="loadtext">Carregando...</h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(window).on('load', function() {
+        $(".preloader").fadeOut(1000);
+        $("html body").css({"overflow-y":"scroll","touch-action":"auto"});
+      })
+    </script>
+
+    <!--preloaderend-->
+
+    <!--title-->
+    <div class="main">
+      <div class="titleportfolio">
+        <div class="titleportfolio-width">
+          <h1>PORTFÓLIO</h1>
+          <p>Aqui estão alguns dos meus trabalhos:</p>
+          <img class="logo-gallery" src="Imgs-portfolio/logolua.svg">
+        </div>
+      </div>
+
+      <!--gallery-->
+      <div class="gallery">
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/joji.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/joji.html">"Old"&nbspVFX&nbspClip.</a>
+            </div>
+          </div>
+        </div>        
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/intro.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/intro.html">Intro&nbspde&nbspDivulgação</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/buzzkill.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/buzzkill.html">Lee&nbspSin&nbspx&nbspYasuo&nbspMontage</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/ignite.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/burnfx.html">BurnFX</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img class="img skeleton" src="Imgs-portfolio/imgs-update/talon.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/talon.html">Clip&nbspPara&nbspTwitter&nbsp-&nbspCompleto</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/cleansad.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/cleansad.html">Montage&nbsp-&nbspClean</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/twitterclean.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/twitterclean.html">Twitter&nbsp-&nbspClean</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/leeashe.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/leeashe.html">Clip&nbspcom&nbspOverlays</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/cutsmata2cortado.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/cutsmata2.html">Twitter&nbspClip&nbsp-&nbspCompleto</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/redzed cortado.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/redzed.html">Twitter&nbsp-&nbspClip&nbspHardtrap</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/yungbudacortado.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/yungbuda.html">Highlights&nbsp-&nbspClean</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/brek cortado.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/brek2min.html">Montage&nbsp-&nbspClean&nbsp2m</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/blueberries.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/blueberries.html">Highlights&nbsp-&nbspClean</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/linzcortado.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/linz.html">Montage&nbsp-&nbspClean&nbsp2m</a>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Imgs-portfolio/imgs-update/identigniteCortado.png" />
+          <div class="img-overlay">
+            <div class="img-description">
+              <a class="titulo-imgdesc" href="../portfolio/pages/identignite.html">Ident&nbsp-&nbspClean</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__addr">
+        <img class="imgfooter" src="Imgs-portfolio/Logo.svg" alt="risiXDzn©">
+        <h2>Contact</h2>
+        <address>
+          @risixdzn - Twitter <i class="fa fa-twitter"></i><br>
+          <a class="footer__btn" href="mailto:contatorisix@gmail.com">Email</a>
+        </address>
+      </div>
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Socials</h2>
+          <ul class="nav__ul">
+            <li>
+              <i class="fa fa-twitter"></i><a href="https://twitter.com/risixdzn" target="_blank"> Twitter</a>
+            </li>
+            <li>
+              <i class="fa fa-youtube"></i><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank"> Youtube</a>
+            </li>
+            <li>
+              <i class="fa fa-github"></i><a href="https://github.com/risixdzn" target="_blank"> Github</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Links</h2>
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <i class="fa-brands fa-discord"></i><a href="https://discord.gg/invite/8nvG4Ng3Sr" target="_blank"> Discord</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-tree"></i><a href="https://linktr.ee/risiXDzn"> Linktree</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-fire-flame-curved"></i></i><a href="https://twitter.com/ignitelolbr"> Ignite</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-book"></i><a href="https://risixdzn.github.io/portfolio"> Portfolio</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-bitcoin"></i><a href="#"> Prices</a>              
+            </li>
+            <li>
+              <i class="fa-solid fa-plus"></i><a href="#"> More</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+          <ul class="nav__ul">
+            <li>
+              <a href="https://www.privacypolicygenerator.info/live.php?token=VXlY9cJBSzZf07msPmkQh5xkyJBiWQnI">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="https://www.termsandconditionsgenerator.com/live.php?token=h1RxlxoUbOGpxW5FpBzpbRnW6Fr6gvZm">Terms of Use</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="legal">
+        <script>
+          document.write('&copy;');
+          document.write(' 2020 - ');
+          document.write(new Date().getFullYear());
+          document.write(' risiXDzn - All Rights Reserved.');
+          document.write('<br/>Last Updated : ');
+          document.write(document.lastModified);
+        </script>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+  </body>
+</html>

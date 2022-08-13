@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Amorim - Home</title>
+    <meta name="description" content="Editor de Vídeo, experiente em Adobe Premiere, After Effects e Photoshop.">
+    <link rel="stylesheet" href="css/indexstyle.css" />
+    <link rel="shortcut icon" type="image/png" href="./Imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <!--fontawesome, jquery and reveal-->
+    <script src="https://kit.fontawesome.com/53a67ba7bc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!--locomotive scroll-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="css/locoScroll.css">
+    
+    <!--text animation-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!--barba and gsap-->     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    
+    
+
+    <meta name="author" content="&ldquorisiXDzn&rdquo" />
+    <meta property='og:title' content='Home - Ricardo Amorim' />
+    <meta property='og:image' content="https://i.ibb.co/G7sR8t1/og-image-home.png" />    
+    <meta property="og:image" content="https://ignitecreative.com.br/wp-content/uploads/2021/12/Exitlag-Cliente-Ignite-Creative.png"/>
+    <meta property='og:description' content='Editor de Vídeos. Experiente em Premiere, After Effects e Photoshop.' />
+    <meta property='og:url' content='https://risixdzn.github.io/Home/' />
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta content="#8a2be2" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+  <body class="non-event">
+    <!--transition page-->
+    <link rel="stylesheet" href="css/transition.css">    
+    <!--<script src="js/animations.js"></script>-->        
+    <script src="js/gsap.js"></script>
+    <script src="js/skew.js"></script>
+
+    <!--follow mouse--><div class="circle"></div>
+    <script src="js/mouse.js"></script>
+        
+    
+    
+    <!--<div class="rnd_corners">
+      <img src="Imgs/corner_l.png" class="corner_l">
+      <img src="Imgs/corner_r.png" class="corner_r">
+    </div>-->
+    
+    <header>
+      <nav>
+        <div class="container">
+          <img class="headerimg" src="Imgs/Logo.svg">
+          
+          <div class="menu">
+            <a id="_home is-active">Home</a>
+            <a id="_portfolio">Portfólio</a>
+            <a id="_precos">Preços</a>
+            <a id="_contato">Contato</a>
+          </div>
+          <script src="js/href.js"></script>
+
+          <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <nav class="mobile-nav">
+      <a id="_home" onclick="home()">Home</a>
+      <a id="_portfolio" onclick="portfolio()">Portfólio</a>
+      <a id="_precos" onclick="precos()">Preços</a>
+      <a id="_contato" onclick="contato()">Contato</a>
+    </nav>
+    <script src="js/main.js"></script>
+
+    <!--progressbar-->
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <script type="text/javascript">
+      var percent = document.getElementById("progressbar");
+      var percent = document.getElementById("percent");
+      window.onscroll = function() {
+        var totalHeight = document.body.scrollHeight - window.innerHeight;
+        var progress = (window.pageYOffset / totalHeight) * 100;
+        progressbar.style.height = progress + "%";
+      }
+    </script>
+
+    <!--backtop-->
+    <a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!--backtopend-->
+
+    <!--sessão home-->
+    <main data-scroll-container>
+      
+      <section class="home" id="home" >        
+        <div class="max-width-home" data-scroll data-scroll-speed="2.5">
+          <div class="conteudo-home">     
+
+            <span class="subtitlespan">
+              <h2 class="homesubtitle1"><span class="type"></span></h2>
+            </span>      
+            
+            <script>
+              window.addEventListener("load", function(e) {
+                var typed = new Typed('.type', {
+                  strings: [
+                    "Editor de Vídeo.",
+                    "Designer",
+                    "Freelancer",
+                    "Desenvolvedor"
+                  ],  
+                        typeSpeed: 100,
+                      backSpeed: 50,
+                    startDelay: 1300,  
+                  loop:true,                             
+                });    
+              });
+            </script>
+
+            <span class="titlespan">
+              <h1 class="hometitle1">RICARDO</h1>
+            </span>            
+            <span class="titlespan">
+              <h1 class="hometitle1">AMORIM</h1>
+            </span>
+            
+            <link rel="stylesheet" href="css/revealtext.css">
+
+            <h3><img class="homenickimg" src="Imgs/RISIXDZN.svg"> </h3>
+            <button class="homebuttonctt" onclick="window.location.href = 'https://twitter.com/risixdzn';" target="_blank">
+              Contato
+            </button>
+            <div class="social-menu">
+              <ul>
+                <li><a href="https://twitter.com/risixdzn" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/risixdzn" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+            </div>
+           
+          </div>          
+        </div>        
+        
+        <div class="imgleesin">
+          <img class="imgleesinbg skewElem" href="https://youtube.com/watch?v=mlvysfy6RmQ" src="Imgs/leesin-bg-shape.png">
+        </div>
+          
+        <!--particles.js-->
+        
+        <script type="text/javascript" src="js/particles.min.js"></script>
+        <script type="text/javascript" src="js/particles-config.js"></script>
+        <div id="particles-js"></div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+        <video id="videoBGhome" poster="Vids/bgframe-buzzkill-purple.jpg" autoplay muted loop>
+          <source src="Vids/buzzkill-webm.webm" type="video/mp4">
+        </video>
+      </section>
+  
+      <!--sobre section-->
+      <section class="sobre" id="sobre">      
+
+          <div class="sobre-titulo">
+            <h1 class="sobre-sobre">Sobre</p>
+          </div>
+
+          <div class="sobre-conteudo">
+            <div class="coluna1">
+              <img class="leesinsobre" src="Imgs/leesin-meditate-shape.png" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
+            </div>
+
+            <div class="divisor" data-scroll data-scroll-speed="2.5"></div>
+            
+            <div class="coluna2" data-scroll data-scroll-speed="2.5">
+              <div class="titulo-sobre">Ricardo Amorim</div>
+              <p class="sobre-resumo">Carreira desenvolvida no ambito da <b>edição de
+                vídeos</b>, com ampla experiência em Adobe After
+                Effects e Premiere, além da expertise em
+                <b>desenvolvimento de sistemas web front-end</b>. Edito vídeos a 5 anos e desenvolvo a 6 meses. Prezo pela qualidade em meus trabalhos, dando o meu melhor para a suavidade e pela fluidez do vídeo, assim como da intuitividade do design. Uma edição e um código simples, fluído e leve é a chave para o sucesso, sendo o meu intúito nos projetos.
+              </p>
+              <a class="button" href="https://twitter.com/risixdzn" target="_blank">Contato</a>
+
+              <img class="skillsgif" src="Imgs/purpleskills.gif"  >
+            </div> 
+          </div>
+          
+          <!--habilidades start-->    
+          <div class="sobre-titulo">
+            <h1 class="sobre-sobre" style="margin-top: 75px;">Habilidades</p>
+          </div>
+             
+          <div class="skills-wrapper first" > <!--edição-->
+            <link rel="stylesheet" href="css/skills.css">
+            
+            <div class="skill">
+              <div class="content">
+                <div class="appwrap">
+                  <img class="logo" src="Imgs/Skills/after.png" alt="mparticle">
+                  <div class="title">After Effects</div>
+                </div>                
+                <h6>Post production effects.</h6>
+                <div class="hover_content">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi facilis molestias placeat. Quisquam doloremque accusamus error</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="content">
+                <div class="appwrap">
+                  <img class="logo" src="Imgs/Skills/premiere.png" alt="mparticle">
+                  <div class="title">Premiere</div>
+                </div>
+                <h6>General video editing.</h6>
+                <div class="hover_content">
+                  <p>mParticle’s customer data platform empowers you to Integrate all of your data and orchestrate it across channels, partners, and systems.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill">
+              <div class="content">
+                <div class="appwrap">
+                  <img class="logo" src="Imgs/Skills/photoshop.png" alt="mparticle">
+                  <div class="title">Photoshop</div>
+                </div>
+                <h6>Brand arts & photo editing.</h6>
+                <div class="hover_content">
+                  <p>mParticle’s customer data platform empowers you to Integrate all of your data and orchestrate it across channels, partners, and systems.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="content">
+                <div class="appwrap">
+                  <img class="logo" src="Imgs/Skills/Creator Suite.png" alt="mparticle">
+                  <div class="title">Creator Suite</div>
+                </div>
+                <h6>League of Legends 3D resource.</h6>
+                <div class="hover_content">
+                  <p>mParticle’s customer data platform empowers you to Integrate all of your data and orchestrate it across channels, partners, and systems.</p>
+                </div>
+              </div>
+            </div>           
+
+          </div>
+
+          <hr class="horizontaline">
+
+          <div class="skills-wrapper"><!--programação--> 
+            
+            <div class="skill">
+              <div class="content">
+                <div class="appwrap">
+                  <img class="logo" src="Imgs/Skills/vscode.png" alt="mparticle">
+                  <div class="title">VSCODE</div>
+                </div>
+                <h6>Code editor.</h6>
+                <div class="hover_content">
+                  <p>mParticle’s customer data platform empowers you to Integrate all of your data and orchestrate it across channels, partners, and systems.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="content">
+                <div class="appwrap">
+                  <img class="logo" src="Imgs/Skills/html.png" alt="mparticle">
+                  <div class="title">HTML5</div>
+                </div>
+                <h6>General markup language.</h6>
+                <div class="hover_content">
+                  <p>mParticle’s customer data platform empowers you to Integrate all of your data and orchestrate it across channels, partners, and systems.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill">
+              <div class="content">
+                <div class="appwrap">
+                  <img class="logo" src="Imgs/Skills/css.png" alt="mparticle">
+                  <div class="title">CSS/Sass</div>
+                </div>
+                <h6>Cascading style sheets.</h6>
+                <div class="hover_content">
+                  <p>mParticle’s customer data platform empowers you to Integrate all of your data and orchestrate it across channels, partners, and systems.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="content">
+                <div class="appwrap">
+                  <img class="logo" src="Imgs/Skills/react.png" alt="mparticle">
+                  <div class="title">ReactJS</div>
+                </div>
+                <h6>User interface JS library.</h6>
+                <div class="hover_content">
+                  <p>mParticle’s customer data platform empowers you to Integrate all of your data and orchestrate it across channels, partners, and systems.</p>
+                </div>
+              </div>
+            </div>           
+
+          </div>
+          <!--habilidades end-->      
+      </section>
+  
+      <!--serviços section-->
+      <section class="services" id="services">
+        <div class="services-max-width" data-scroll data-scroll-speed="2.5">
+  
+          <!--PORTFOLIO-->
+          <div class="services-titulo">
+            <p class="portfolio-portfolio">Portfólio</p>
+          </div>
+          <div class="containerportfolio">
+            <img class="portfoliopreview skewElem" src="Imgs/portfolio-preview.png">
+            <a href="https://risixdzn.github.io/portfolio/" class="saibamais-btn">Saiba Mais</a>
+          </div>
+          <hr class="divisao">
+  
+          <!--SERVIÇOS-->
+          <div class="services-titulo">
+            <p class="services-services">Serviços</p>
+          </div>
+          <div class="services-subtitulo">
+            <p class="services-services-subtitulo">Trabalhos e colaborações recentes.</p>
+          </div>
+          <div class="cards">
+            <div class="card-wrap">
+              <img src="Imgs/points3.png" class="points points1 points-sq" alt="" />
+              <div class="card" data-card="Crystal">
+                <div class="card-content z-index">
+                  <img src="Imgs/crystal-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Crystal</h3>
+                  <p class="text">
+                    Canal focado em League of Legends. Montages, highlights e outros videos são o foco da página.
+                  </p>
+                  <a href="https://www.youtube.com/channel/UCtn-xNufy2gRqspVod8z_rQ" class="btn-read-more" target="_blank">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrap">
+              <div class="card" data-card="Burn">
+                <div class="card-content z-index">
+                  <img src="Imgs/ignite-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Burn© - League of Legends</h3>
+                  <p class="text">
+                    Always on Fire.
+                  </p>
+                  <p class="text2">
+                    O primeiro canal brasileiro de League of Legends que inovou o estilo de edição da região.
+                  </p>
+                  <a href="https://twitter.com/burnfxbr" class="btn-read-more" target="_blank">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrap">
+              <img src="./img/shapes/points3.png" class="points points2 points-sq" alt="" />
+              <div class="card" data-card="rsx">
+                <div class="card-content z-index">
+                  <img src="Imgs/risix-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">risiXDzn&copy</h3>
+                  <p class="text">
+                    Canal pessoal. Arquiva algumas edits curtas e pequenos videos teste.
+                  </p>
+                  <a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" class="btn-read-more">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!--SERVIÇOS END-->
+  
+      <!--CONTATO START-->
+      <section class="contato" id="contato">
+        <div class="contato-max-width" data-scroll data-scroll-speed="2.5">
+          <div class="cttbox">
+             <h1 class="title">Contato</h3>
+             <h2 class="subtitle">Vamos trabalhar juntos!</h2>
+             <h3 class="desc">Quer fazer um pedido, tirar alguma duvida, ou até mesmo dar uma dica?<br>Entre em contato por meio do Twitter!</h3>
+             <a class="button" href="https://twitter.com/risixdzn" target="_blank">Contato</a>
+             <div class="social-menu-ctt">
+              <ul>
+                <li><a href="https://twitter.com/risixdzn" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/risixdzn" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!--CONTATO END-->
+  
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__addr">
+          <img class="imgfooter" src="Imgs/Logo.svg" alt="risiXDzn©">
+          <h2>Contact</h2>
+          <address>
+            @risixdzn - Twitter <i class="fa fa-twitter"></i><br>
+            <a class="footer__btn" href="mailto:contatorisix@gmail.com">Email</a>
+          </address>
+        </div>
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Socials</h2>
+            <ul class="nav__ul">
+              <li>
+                <i class="fa fa-twitter"></i><a href="https://twitter.com/risixdzn" target="_blank"> Twitter</a>
+              </li>
+              <li>
+                <i class="fa fa-youtube"></i><a href="https://www.youtube.com/channel/UCNe8csUeNdFj8psI4Ydz3KQ" target="_blank"> Youtube</a>
+              </li>
+              <li>
+                <i class="fa fa-github"></i><a href="https://github.com/risixdzn" target="_blank"> Github</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Links</h2>
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <i class="fa-brands fa-discord"></i><a href="https://discord.gg/invite/8nvG4Ng3Sr" target="_blank"> Discord</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-tree"></i><a href="https://linktr.ee/risiXDzn"> Linktree</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-fire-flame-curved"></i></i><a href="https://twitter.com/ignitelolbr"> Ignite</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-book"></i><a href="https://risixdzn.github.io/portfolio"> Portfolio</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-bitcoin"></i><a href="https://risixdzn.github.io/precos"> Preços</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-plus"></i><a href="#"> More</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            <ul class="nav__ul">
+              <li>
+                <a href="https://www.privacypolicygenerator.info/live.php?token=VXlY9cJBSzZf07msPmkQh5xkyJBiWQnI">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="https://www.termsandconditionsgenerator.com/live.php?token=h1RxlxoUbOGpxW5FpBzpbRnW6Fr6gvZm">Terms of Use</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="legal">
+          <script>
+            document.write('&copy;');
+            document.write(' 2020 - ');
+            document.write(new Date().getFullYear());
+            document.write(' risiXDzn - All Rights Reserved.');
+            document.write('<br/>Last Updated : ');
+            document.write(document.lastModified);
+          </script>
+        </div>
+      </footer>  
+      <!-- footer end -->  
+    </main>
+    
+    <!--scrollreveal-->
+    <!--<script>
+      ScrollReveal({
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+      });
+      ScrollReveal().reveal('.sobre-titulo, .services-titulo, .services-subtitulo', {
+        delay: 0
+      });
+      ScrollReveal().reveal('.sobre-coluna1', {
+        delay: 500
+      });
+      ScrollReveal().reveal('.conteudo-sobre-coluna2', {
+        delay: 500
+      });
+      ScrollReveal().reveal('.imgleesin', {
+        delay: 0
+      });
+      ScrollReveal().reveal('.conteudo-home, .divisao', {
+        delay: 0
+      });
+      ScrollReveal().reveal('.cards, .containerportfolio', {
+        delay: 200
+      });
+    </script>-->
+    <script src="js/locoScroll.js"></script>
+    <!--scrollreveal end-->
+  </body>
+</html>

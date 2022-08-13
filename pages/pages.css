@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/akira-expanded');
+@import url(//db.onlinewebfonts.com/c/ebb6d1e1e9255ac9ac77ce9793f6676d?family=Lulo+Clean);
+
+*{
+	margin:0;
+	padding:0;	
+}
+
+:root{
+    --primary: 	#8A2BE2;
+    --primary-light:#8400ff71;
+    --primary-dark: #11051b;
+    --light: #EEEEEE;
+    --dark: #070707;
+    --dark2: #0c0c0c;
+    --dark3: #161616;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: var(--dark);
+}
+
+/*close btn*/
+
+.close-btn{
+    display: flex;
+    color: #fff;
+    justify-content: end;
+    padding: 50px;     
+}
+
+.close-btn li{
+    list-style-type: none; 
+    font-size: 35px;
+    line-height: 35px;
+    z-index: 1999; 
+    
+}
+
+/*main*/
+
+.main{        
+    height: 70vh;
+    background-color: var(--dark);  
+    display: flex;  
+    align-items: center;             
+}    
+
+.conteudo-main{
+    display: flex;    
+    flex-direction: row; 
+    background-color: var(--dark);                     
+}
+
+.imgportfolio{
+    width: 60vw;
+    margin-left: 5vw;
+    border-radius: 20px;
+}
+
+.main-text-description{   
+    align-items:center;       
+    color: #fff; 
+    font-family: Poppins;
+    justify-content: right; 
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.titulo-description{
+    font-size: 2.6609vw;
+}
+
+.info-description{
+    font-size: 1.0733vw;
+    line-height: 5  ;
+    font-weight: 300;
+}
+
+.saibamais-btn{
+    text-decoration: none;
+    color: #fff; 
+    transform: translate(-50%, -50%);    
+    background-color: var(--primary);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 15px;    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.4s; 
+     
+}
+
+.saibamais-btn:hover{
+    box-shadow: 0 0 1.5em var(--primary);
+    cursor: pointer;
+}
+
+.divisao{
+    width: 35%;
+    height: 5px;
+    background-color: #8A2BE2;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    left: 50%;    
+    margin-top: 10px;    
+}
+
+.legal {
+    font-size: 0.8vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+    opacity: 75%;
+  }
+
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+body{
+    animation: transitionIn 0.75s;
+}
+
+@media screen and (max-width:760px){
+    .main{        
+        height: 70vh;
+        background-color: var(--dark);               
+    }    
+
+    .conteudo-main{
+        display: flex;    
+        flex-direction: column; 
+        background-color: var(--dark);    
+        align-items: center;               
+    }
+    
+    .imgportfolio{        
+        width: 90vw;       
+        border-radius: 20px;
+    }
+
+    .main-text-description{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+    .titulo-description{
+        margin-top: 15px;
+        font-size: 4.8387vw;
+        margin-left: -3vw;
+    }
+    
+    .info-description{
+        justify-content: center;
+        font-size: 3.0721vw;
+        margin-top: -15px;
+        margin-left: -3vw;
+    }
+    
+    .divisao{
+        margin-left: 21.5vw;
+        justify-content: center;
+    }
+
+    .saibamais-btn{        
+        justify-content: center;
+        margin-left: -3vw;
+    }
+    
+    .legal{
+        font-size: 3.2679vw;
+        justify-content: center;  
+        margin-left: -3vw;      
+    }
+}
