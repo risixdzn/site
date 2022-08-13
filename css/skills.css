@@ -1,0 +1,139 @@
+:root {
+    --primary: #8a2be2;
+    --primary-opaque: #6811ba;
+    --primary-light: #892be271;
+    --light: #eeeeee;
+    --dark: #070707;
+    --dark2: #0c0c0c;
+    --dark3: #161616;
+}
+
+.first{
+    margin-top: 20px;
+}
+
+.skills-wrapper{
+  height: 100%;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  /*background-color: aqua;*/  
+}
+
+.skill {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 22em;
+  max-width: 80%;
+  padding: 2em 0;
+  background: var(--dark3);
+  box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+  transition: all 0.35s ease;
+}
+.skill::before, .skill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--primary);
+  height: 4px;
+}
+.skill::before {
+  width: 0;
+  opacity: 0;
+  transition: opacity 0 ease, width 0 ease;
+  transition-delay: 0.5s;
+}
+.skill::after {
+  width: 100%;
+  background: var(--dark2);
+  transition: width 0.5s ease;
+}
+.skill .content {
+  width: 18em;
+  max-width: 80%;
+}
+.skill .logo {
+  margin: 0 0 1em;
+  width: 3.625em;
+  transition: all 0.35s ease;
+}
+.skill .logo:after {
+    content: 'sexo';
+    transition: all 0.35s ease;
+  }
+.skill h6 {
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: "Poppins";
+}
+.skill .hover_content {
+  overflow: hidden;
+  max-height: 0;
+  transform: translateY(1em);
+  transition: all 0.55s ease;
+}
+.skill .hover_content p {
+  margin: 1.5em 0 0;
+  color: #6e6e70;
+  line-height: 1.4em;
+}
+.skill:hover {
+  width: 24em;
+  box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+}
+.skill:hover::before {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease, width 0.5s ease;
+  transition-delay: 0;
+}
+.skill:hover::after {
+  width: 0;
+  opacity: 0;
+  transition: width 0 ease;
+}
+.skill:hover .logo {
+  margin-bottom: 0.5em;
+}
+.skill:hover .hover_content {
+  max-height: 10em;
+  transform: none;
+}
+
+.horizontaline{
+    width: 25%;
+    height: 5px;
+    background-color: #8a2be2;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;      
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.appwrap{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    gap: 15px;
+}
+
+.appwrap .title{
+    transform: translateY(-25%);
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+}
