@@ -1,21 +1,21 @@
 $("#_portfolio").click(function portfolio(){
     $( "body" ).removeClass( "loaded" ).addClass( "non-event" );        
     setTimeout(function() { 
-        window.location.href = '/portfolio.html';
+        window.location.href = '/site/portfolio.html';
     }, 800);    
 });
 
 $("#_home").click(function home(){
     $( "body" ).removeClass( "loaded" ).addClass( "non-event" );        
     setTimeout(function() { 
-        window.location.href = '/index.html';
+        window.location.href = '/';
     }, 800);    
 });
 
 $("#_precos").click(function precos(){
     $( "body" ).removeClass( "loaded" ).addClass( "non-event" );        
     setTimeout(function() { 
-        window.location.href = '/precos.html';
+        window.location.href = '/site/precos.html';
     }, 800);    
 });
 
